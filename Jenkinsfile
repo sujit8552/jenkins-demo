@@ -5,9 +5,9 @@ pipeline{
 		}
 	}
 	stages{
-		stage("Hello"){
+		stage("BUILD"){
 			steps{
-				echo "Hello World"
+				echo "Hiii"
 			}
 		}
 	}
