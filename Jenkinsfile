@@ -2,6 +2,7 @@ pipeline{
 	agent{
 		node{
 			label 'built-in'
+			customWorkspace '/home/ec2-user'
 		}
 	}
 	parameters{
@@ -17,6 +18,10 @@ pipeline{
 				echo "hi, your job run successfully :) "
 				echo "Person name is: $params.PERSON" 
 				echo "Your environment is $ENVIRONMENT"
+				sh '''
+				touch 11.txt
+    				echo pwd
+				'''
 			}
 		}
 	}
