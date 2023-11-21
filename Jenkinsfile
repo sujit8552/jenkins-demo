@@ -1,15 +1,10 @@
 pipeline{
-	agent{
-		node{
-			label 'build-in'
-		}
-	}
+	agent any
 	stages{
-		stage('BUILD'){
+		stage('build'){
 			steps{
-				echo "Hiii"
+				echo "hi"
 			}
 		}
 	}
-		
 }
