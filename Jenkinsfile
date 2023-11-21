@@ -10,7 +10,8 @@ pipeline{
 	stages{
 		stage("BUILD"){
 			steps{
-				echo "hi"
+				echo "hi, your job run successfully :) "
+				echo "Person name is: $params.PERSON" 
 			}
 		}
 	}
