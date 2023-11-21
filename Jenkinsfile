@@ -24,5 +24,17 @@ pipeline{
     				'''
 			}
 		}
+		stage('ENV VARIABLE'){
+			steps{
+				echo "The build number is ${env.BUILD_NUMBER}"
+				echo "The build id is ${env.BUILD_ID}"
+				echo "The build dislplay name is ${env.BUILD_DISPLAY_NAME}"
+				echo "The job name is ${env.JOB_NAME}"
+				echo "The node name is ${env.NODE_NAME}"
+				echo "The node labels is ${env.NODE_LABELS}"
+				echo "The build id is ${env.JENKINS_HOME}"
+				echo "The workspace is ${env.WORKSPACE}"
+			}
+		}
 	}
 }
