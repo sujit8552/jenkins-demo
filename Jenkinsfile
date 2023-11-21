@@ -1,10 +1,15 @@
 pipeline{
-	agent any
+	agent{
+		node{
+			label 'build-in'
+		}
+	}
 	stages{
-		stage('Hello World'){
+		stage("Hello"){
 			steps{
 				echo "Hello World"
 			}
 		}
 	}
+		
 }
