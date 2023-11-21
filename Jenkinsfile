@@ -20,8 +20,8 @@ pipeline{
 				echo "Your environment is $ENVIRONMENT"
 				sh '''
 				touch 11.txt
-    				echo pwd
 				'''
+				pwd
 			}
 		}
 	}
